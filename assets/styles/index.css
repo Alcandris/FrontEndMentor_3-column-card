@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "Lexend_Deca";
+  src: url(../fonts/LexendDeca-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Big_Shoulders_Display";
+  src: url(../fonts/BigShouldersDisplay-VariableFont_wght.ttf);
+}
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 830px;
+  width: 90%;
+  margin: 25px auto;
+  height: 450px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media screen and (max-width: 700px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+  }
+}
+.container .car {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 45px;
+}
+.container .car1 {
+  background-color: hsl(31deg, 77%, 52%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+@media screen and (max-width: 700px) {
+  .container .car1 {
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+  }
+}
+.container .car1 button {
+  color: hsl(31deg, 77%, 52%);
+}
+.container .car1 button:active {
+  background-color: hsl(31deg, 77%, 52%);
+}
+.container .car2 {
+  background-color: hsl(184deg, 100%, 22%);
+}
+.container .car2 button {
+  color: hsl(184deg, 100%, 22%);
+}
+.container .car2 button:active {
+  background-color: hsl(184deg, 100%, 22%);
+}
+.container .car3 {
+  background-color: hsl(179deg, 100%, 13%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+@media screen and (max-width: 700px) {
+  .container .car3 {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 5px;
+  }
+}
+.container .car3 button {
+  color: hsl(179deg, 100%, 13%);
+}
+.container .car3 button:active {
+  background-color: hsl(179deg, 100%, 13%);
+}
+.container .car img {
+  height: 40px;
+}
+.container .car h2 {
+  color: #f1f1f1;
+  font-family: Big_Shoulders_Display, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  margin: 25px 0;
+}
+.container .car p {
+  color: #f1f1f1;
+  font-family: Lexend_Deca, sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 150%;
+}
+.container .car button {
+  cursor: pointer;
+  font-family: Lexend_Deca, sans-serif;
+  font-size: 1rem;
+  width: 130px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  margin-top: 50px;
+}
+.container .car button:active {
+  color: #f1f1f1;
+  border: 2px #f1f1f1 solid;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=index.css.map */
